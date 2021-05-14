@@ -35,7 +35,7 @@ module.exports = app => {
         res.sendFile(path.join(__dirname, "../assets/notes.html"));
     });
 
-    app.get('*', function(req, res) {
+    app.get('/', function(req, res) {
         res.sendFile(path.join(__dirname, "../assets/index.html"));
     });
 
