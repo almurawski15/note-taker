@@ -32,11 +32,11 @@ module.exports = app => {
     });
 
     app.get('/notes', function(req, res) {
-        res.sendFile(path.join(__dirname, "../assets/js/notes.html"));
+        res.sendFile(path.join(__dirname, "../assets/notes.html"));
     });
 
     app.get('*', function(req, res) {
-        res.sendFile(path.join(__dirname, "../assets/js/index.html"));
+        res.sendFile(path.join(__dirname, "../assets/index.html"));
     });
 
     function updateDb() {
